@@ -20,7 +20,7 @@ ol, ul {
     margin-left: 1em;
     display: flex;
     flex-direction: column;
-    gap: 0.8em;
+    gap: 0.2em;
 }
 
 ol {

@@ -21,7 +21,7 @@
     --foreground-rgb: 230, 230, 230;
     --foreground: rgb(var(--foreground-rgb));
 
-    --brand-rgb: 243, 198, 117;
+    --brand-rgb: 256, 220, 117;
     --brand: rgb(var(--brand-rgb));
 
     --flame-0-rgb: 220, 170, 120;

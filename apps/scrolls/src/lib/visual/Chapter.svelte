@@ -15,13 +15,15 @@ let {
 
 
 let archetypes = $derived(Object.keys(sections[0])) as (keyof ScrollSection)[]
-let active_archetype = $state("developer") as keyof ScrollSection
+let active_archetype = $state("corrupted") as keyof ScrollSection
 
 const archetype_map = {
     "flamewalker": "🔥 Flamewalker",
     "canonical": "📖 Canonical",
     "developer": "💻 Developer",
     "kids": "👶 Kids",
+    "gen_z": "📱 Gen Z",
+    "corrupted": "👿 Corrupted",
 } as const
 
 </script>

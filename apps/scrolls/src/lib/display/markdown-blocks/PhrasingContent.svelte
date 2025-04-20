@@ -65,6 +65,10 @@ strong {
     text-shadow: 0 0 12px rgba(var(--color-rgb), 1);
 }
 
+em {
+    color: var(--galaxy-blue);
+}
+
 img {
     width: 100%;
 }
