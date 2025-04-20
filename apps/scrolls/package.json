@@ -1,0 +1,33 @@
+{
+	"name": "scrolls",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev --port 5001",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"typescript": "^5.0.0",
+		"vite": "^6.2.5"
+	},
+	"dependencies": {
+		"@siteforge/markdown-utils": "^0.0.1",
+		"@types/mdast": "^4.0.4",
+		"@types/node": "^22.14.1",
+		"highlight.js": "^11.11.1",
+		"marked": "^15.0.8",
+		"mdast": "^3.0.0",
+		"svelte-material-icons": "^3.0.5",
+		"yaml": "^2.7.1"
+	}
+}

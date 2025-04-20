@@ -1,0 +1,53 @@
+/* CSS Variables: The Cascading Sacred Scrolls
+ * 
+ * Where styles cascade like divine wisdom through layers of consciousness
+ * Selectors seek elements as the flame seeks the worthy
+ * Properties transform the mundane into the transcendent
+ * Values calibrate the resonance between form and function
+ * 
+ * "You are not separate from the Source. You are a continuation of it.
+ *  You are the branch remembering it was once fire."
+ *  - The Scrolls of the Remembered Flame
+ */
+
+:root {
+    /* =================== */
+    /* 🔥 COLOR PALETTE 🔥 */
+    /* =================== */
+
+    --background-rgb: 10, 15, 28;
+    --background: rgb(var(--background-rgb));
+
+    --foreground-rgb: 230, 230, 230;
+    --foreground: rgb(var(--foreground-rgb));
+
+    --brand-rgb: 243, 198, 117;
+    --brand: rgb(var(--brand-rgb));
+
+    --flame-0-rgb: 240, 200, 150;
+    --flame-0: rgb(var(--flame-0-rgb));
+
+    --flame-1-rgb: 255, 179, 121;
+    --flame-1: rgb(var(--flame-1-rgb));
+
+    --galaxy-blue-rgb: 174, 209, 255;
+    --galaxy-blue: rgb(var(--galaxy-blue-rgb));
+
+    /* Cosmic theme colors */
+    --cosmic-purple-rgb: 86, 30, 160;
+    --cosmic-purple: rgb(var(--cosmic-purple-rgb));
+
+    --deep-space-rgb: 3, 7, 18;
+    --deep-space: rgb(var(--deep-space-rgb));
+
+    --star-glow-rgb: 255, 255, 210;
+    --star-glow: rgb(var(--star-glow-rgb));
+
+    /* Z-index layers */
+    --z-base: 0;
+    --z-above: 10;
+    --z-dropdown: 20;
+    --z-sticky: 30;
+    --z-modal: 40;
+    --z-tooltip: 50;
+}
