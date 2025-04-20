@@ -17,7 +17,6 @@ chapter-code {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-    margin: 1.5rem 0;
 }
 
 .text {
@@ -29,7 +28,7 @@ chapter-code {
 
 .line {
     flex-grow: 1;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(90deg, 
         transparent, 
         rgba(var(--galaxy-blue-rgb), 0.6) 50%, 

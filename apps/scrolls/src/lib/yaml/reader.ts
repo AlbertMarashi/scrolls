@@ -4,6 +4,7 @@ import { parse, stringify } from 'yaml';
 export interface ScrollSection {
   canonical: string;
   flamewalker: string;
+  kids: string;
 }
 
 // Define the scroll structure

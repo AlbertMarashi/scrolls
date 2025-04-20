@@ -13,22 +13,48 @@ let {
     sections: ScrollSection[],
 } = $props()
 
-function double_lines(text: string) {
-    return text.split("\n").join("\n\n")
-}
+
+let archetypes = $derived(Object.keys(sections[0])) as (keyof ScrollSection)[]
+let active_archetype = $state("developer") as keyof ScrollSection
+
+const archetype_map = {
+    "flamewalker": "🔥 Flamewalker",
+    "canonical": "📖 Canonical",
+    "developer": "💻 Developer",
+    "kids": "👶 Kids",
+} as const
 
 </script>
 
 <chapter>
-    <ChapterCode code={index} />
-    <h2>{title}</h2>
+    <top-area>
+        <ChapterCode code={index} />
+        <h2>{title}</h2>
+        <archetypes>
+            {#each archetypes as archetype}
+                <archetype 
+                    role="button"
+                    tabindex="0"
+                    onkeydown={(e: KeyboardEvent) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                            active_archetype = archetype
+                        }
+                    }}
+                    class:active={active_archetype === archetype}
+                    onclick={() => active_archetype = archetype}
+                >{archetype_map[archetype]}</archetype>
+            {/each}
+        </archetypes>
+    </top-area>
     
     <sections>
         {#each sections as section, idx}
             <section>
                 <h3>Albert {index}:{idx}</h3>
                 <content>
-                    <MarkdownRenderer markdown={double_lines(section.canonical)} />
+                    {#if section[active_archetype]}
+                        <MarkdownRenderer markdown={section[active_archetype]} />
+                    {/if}
                 </content>
             </section>
         {/each}
@@ -40,10 +66,15 @@ chapter {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1.5px solid color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 80%);
-    box-shadow: 0 0 10px rgba(var(--galaxy-blue-rgb), 0.2);
     border-radius: 24px;
+    gap: 24px;
     padding: 24px;
+}
+
+top-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 h2 {
@@ -52,6 +83,7 @@ h2 {
     text-align: center;
     color: color-mix(in srgb, var(--galaxy-blue), white 90%);
     text-shadow: 0 0 10px rgba(var(--galaxy-blue-rgb), 0.6);
+    margin-top: 12px;
 }
 
 h3 {
@@ -59,45 +91,71 @@ h3 {
     font-weight: 400;
     opacity: 0.8;
     border-radius: 4px;
-    padding: 6px 12px;
     align-self: start;
     opacity: 0.5;
-    background: rgba(var(--galaxy-blue-rgb), 0.1);
     display: inline-flex;
-    border-left: 1px solid rgba(var(--galaxy-blue-rgb), 0.2);
+    margin-bottom: 8px;
 }
 
-
+content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
 sections {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    border: 1.5px solid color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 80%);
+    box-shadow: 0 0 10px rgba(var(--galaxy-blue-rgb), 0.2);
+    border-radius: 12px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed rgba(var(--galaxy-blue-rgb), 0.2);
+    padding: 24px;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 :global {
     sections {
         --color-rgb: var(--flame-0-rgb);
         p {
-            font-size: 1.2207;
-            line-height: 1.5;
         }
+    }
+}
 
-        content {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            border: 1px solid rgba(var(--galaxy-blue-rgb), 0.2);
-            background: rgba(var(--galaxy-blue-rgb), 0.05);
-            padding: 12px;
+archetypes {
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 80%);
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(var(--galaxy-blue-rgb), 0.2);
+    archetype {
+        padding: 4px 8px;
+        cursor: pointer;
+        &.active {
+            background-color: color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 90%);
             border-radius: 8px;
-            border-top-left-radius: 0;
         }
-
-
-        section {
-            display: flex;
-            flex-direction: column;
+        &:hover {
+            background-color: color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 95%);
+            border-radius: 8px;
+        }
+        &:active {
+            background-color: color-mix(in srgb, var(--galaxy-blue), rgba(var(--foreground-rgb), 0.1) 70%);
+            border-radius: 8px;
+        }
+    }
+    &:hover {
+        archetype:not(:hover) {
+            background: unset;
         }
     }
 }

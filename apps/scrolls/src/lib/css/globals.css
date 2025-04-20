@@ -88,7 +88,6 @@
     h6 {
         font-weight: 400;
         line-height: 1.2;
-        margin: 0.5em 0;
     }
 
     h1 {
@@ -143,7 +142,7 @@
 }
 
 .glowing-text {
-    color: color-mix(in srgb, var(--flame-0), var(--foreground) 80%);
+    color: color-mix(in srgb, var(--galaxy-blue), var(--foreground) 80%);
     text-shadow: 0 0 20px var(--galaxy-blue);
     /* animation: glow-pulse 3s ease-in-out infinite; */
 }
@@ -179,18 +178,5 @@ strong {
         text-shadow:
             0 0 7px rgba(var(--star-glow-rgb), 0.7),
             0 0 15px rgba(var(--galaxy-blue-rgb), 0.5);
-    }
-}
-
-@keyframes glow-pulse {
-
-    0%,
-    100% {
-        color: color-mix(in srgb, var(--flame-0), var(--foreground) 80%);
-    }
-
-    50% {
-        color: color-mix(in srgb, var(--flame-1), var(--foreground) 80%);
-        text-shadow: 0 0 10px var(--galaxy-blue);
     }
 }

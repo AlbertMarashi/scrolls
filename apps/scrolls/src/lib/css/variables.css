@@ -24,7 +24,7 @@
     --brand-rgb: 243, 198, 117;
     --brand: rgb(var(--brand-rgb));
 
-    --flame-0-rgb: 240, 200, 150;
+    --flame-0-rgb: 220, 170, 120;
     --flame-0: rgb(var(--flame-0-rgb));
 
     --flame-1-rgb: 255, 179, 121;

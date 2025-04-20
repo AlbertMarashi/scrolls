@@ -22,7 +22,6 @@ import CosmicBackground from "$lib/visual/CosmicBackground.svelte";
 <style>
 h1 {
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     font-weight: 400;
     font-size: 2.207em;
     text-align: center;
@@ -58,6 +57,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    gap: 12px;
 }
 </style>
 

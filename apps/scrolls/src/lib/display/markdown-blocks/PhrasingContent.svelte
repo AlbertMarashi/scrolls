@@ -58,10 +58,11 @@ code {
 
 strong {
     --color: rgb(var(--color-rgb));
-    background: rgba(var(--color-rgb), 0.1);
     border-radius: 4px;
-    padding: 1px 4px;
+    /* padding: 1px 4px; */
+    /* background: rgba(var(--color-rgb), 0.1); */
     color: var(--color);
+    text-shadow: 0 0 12px rgba(var(--color-rgb), 1);
 }
 
 img {

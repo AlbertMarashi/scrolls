@@ -15,6 +15,6 @@ let { blocks }: {
 blocks {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 </style>

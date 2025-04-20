@@ -140,4 +140,9 @@ code {
     white-space: pre-wrap;
 }
 
+:global {
+    .hljs-strong {
+        color: rgba(var(--flame-0-rgb), 0.8);
+    }
+}
 </style>
