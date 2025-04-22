@@ -1,0 +1,17 @@
+{
+    "name": "@siteforge/js-utils",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "./js-utils.ts",
+    "module": "./js-utils.ts",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "@siteforge/eslint-config": "workspace:*",
+        "@siteforge/tsconfig": "workspace:*",
+        "eslint": "9.22.0"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "@siteforge/typebox-utils",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "typebox-utils.ts",
+    "scripts": {
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "dependencies": {
+        "@sinclair/typebox": "^0.34.30"
+    },
+    "devDependencies": {
+        "@siteforge/eslint-config": "workspace:*",
+        "@siteforge/tsconfig": "workspace:*",
+        "eslint": "9.22.0",
+        "vitest": "^3.0.9"
+    }
+}

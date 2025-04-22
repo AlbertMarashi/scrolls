@@ -1,0 +1,7 @@
+{
+    "name": "@siteforge/tsconfig",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "./base.json"
+}

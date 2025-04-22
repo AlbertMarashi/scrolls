@@ -1,0 +1,21 @@
+{
+    "name": "@siteforge/eslint-config",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "./eslint.config.js",
+    "module": "./eslint.config.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "typescript-eslint": "^8.26.1",
+        "@albertmarashi/eslint-plugin-ts": "^4.2.0",
+        "@siteforge/tsconfig": "workspace:*",
+        "@eslint/compat": "^1.2.7",
+        "eslint": "9.22.0",
+        "typescript": "^5.8.2",
+        "globals": "^16.0.0"
+    }
+}

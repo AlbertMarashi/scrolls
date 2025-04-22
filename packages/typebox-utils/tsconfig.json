@@ -1,0 +1,3 @@
+{
+    "extends": "@siteforge/tsconfig/base.json",
+}

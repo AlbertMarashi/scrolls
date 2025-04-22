@@ -1,0 +1,38 @@
+
+[0m[2m[35m$[0m [2m[1mvitest run[0m
+[?25l
+[1m[7m[36m RUN [39m[27m[22m [36mv3.0.9 [39m[90m/Users/albert/repos/siteforge-app/packages/typebox-utils[39m
+
+[?2026h
+[2m Test Files [22m[1m[32m0 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m[1m[32m0 passed[39m[22m[90m (0)[39m
+[2m   Start at [22m14:42:40
+[2m   Duration [22m702ms
+[?2026l[?2026h[K[1A[K[1A[K[1A[K[1A[K[1A[K
+[2m Test Files [22m[1m[32m0 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m[1m[32m0 passed[39m[22m[90m (0)[39m
+[2m   Start at [22m14:42:40
+[2m   Duration [22m912ms
+[?2026l[?2026h[K[1A[K[1A[K[1A[K[1A[K[1A[K
+[1m[33m ❯ [39m[22mexample.test.ts[2m [queued][22m
+
+[2m Test Files [22m[1m[32m0 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m[1m[32m0 passed[39m[22m[90m (0)[39m
+[2m   Start at [22m14:42:40
+[2m   Duration [22m1.75s
+[?2026l[?2026h[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K
+[1m[33m ❯ [39m[22mexample.test.ts[2m 0/1[22m
+
+[2m Test Files [22m[1m[32m0 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m[1m[32m0 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m14:42:40
+[2m   Duration [22m1.85s
+[?2026l[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K[1A[K [32m✓[39m example.test.ts [2m([22m[2m1 test[22m[2m)[22m[90m 22[2mms[22m[39m
+   [32m✓[39m should be true
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 14:42:39
+[2m   Duration [22m 2.18s[2m (transform 63ms, setup 0ms, collect 112ms, tests 22ms, environment 0ms, prepare 518ms)[22m
+
+[?25h

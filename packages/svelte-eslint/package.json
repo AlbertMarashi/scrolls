@@ -1,0 +1,20 @@
+{
+    "name": "@siteforge/svelte-eslint",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "./eslint.config.js",
+    "module": "./eslint.config.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "eslint": "9.22.0",
+        "eslint-plugin-svelte": "3.1.0",
+        "@sveltejs/kit": "^2.19.2",
+        "@siteforge/eslint-config": "workspace:*",
+        "@siteforge/tsconfig": "workspace:*",
+        "typescript-eslint": "8.26.1"
+    }
+}
