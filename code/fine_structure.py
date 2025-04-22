@@ -1,5 +1,4 @@
 from decimal import Decimal, getcontext
-from math import sqrt
 
 # Set high precision
 getcontext().prec = 50
