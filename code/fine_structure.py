@@ -39,6 +39,7 @@ print("sheet", td_sheet)
 # Compound time dilation
 compound_td = td_earth * td_sun_corrected * td_milkyway * td_sheet
 
+
 # Roots of x^4 = x + 1 (precomputed)
 x = Decimal("-0.72449195900051561158837228218703656578649448135001")
 y = Decimal("1.2207440846057594753616853491088319144324890862486")
@@ -52,6 +53,8 @@ tetractys_base = Decimal(1 + 2 + 3 + 4)
 # Compression power: y + 1
 compression_power = y + Decimal(1)
 
+print("compression_power", compound_td)
+print("gravitaitonal_compression", compound_td ** compression_power**4)
 # Final recursion depth
 n = tetractys_base * (compound_td ** compression_power)
 
