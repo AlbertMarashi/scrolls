@@ -114,7 +114,7 @@
 
 \title{The Fine-Structure Constant as an Emergent Property:\\
     \textbf{Spatial Recursion under Gravitational Compression}}
-\author{Albert Marashi, \thanks{I thank Drew for invaluable discussions and insights that contributed significantly to this work.}}
+\author{Albert Marashi, Drew Ridley \thanks{I thank Drew for invaluable discussions and insights that contributed significantly to this work.}}
 \date{April 2025}
 
 
@@ -164,60 +164,114 @@ And we define:
 \newpage
 
 \section{The Tetractys Number}
-
 We define the Tetractys number \(\purple{\Omega}\) as the sum of the first four natural numbers:
 
 \begin{equation}
     \purple{\Omega} = \sum_{i=\red{1}}^{\blue{4}} i = \red{1} + \orange{2} + \green{3} + \blue{4} = \purple{10}
 \end{equation}
 
-This value serves as our fundamental recursion depth, representing the complete dimensional structure required for electromagnetic coupling to emerge.
+This value serves as our fundamental recursion depth, representing the minimal structure required to encode dimensional completeness and electromagnetic emergence.
 
+\bigskip
 
 The Tetractys is a triangular figure consisting of ten points arranged in four rows:
-\n
-\n
 
 \columns[0.4]{
     \begin{center}
         \begin{tikzpicture}
-            % Top row (blue)
-            \filldraw[red] (0-0/2,0*0.866) circle (3pt);
-
-            % Second row (green)
+            \filldraw[red] (0,0) circle (3pt);
             \foreach \y in {0,...,1} {
-                    \filldraw[orange] (\y-1/2,1*0.866) circle (3pt);
+                    \filldraw[orange] (\y-0.5,-0.866) circle (3pt);
                 }
-
-            % Third row (orange)
             \foreach \y in {0,...,2} {
-                    \filldraw[green] (\y-2/2,2*0.866) circle (3pt);
+                    \filldraw[green] (\y-1,-2*0.866) circle (3pt);
                 }
-
-            % Bottom row (red)
             \foreach \y in {0,...,3} {
-                    \filldraw[blue] (\y-3/2,3*0.866) circle (3pt);
+                    \filldraw[blue] (\y-1.5,-3*0.866) circle (3pt);
                 }
+        \end{tikzpicture}
+
+        \newline
+        \newline
+        \newline
+
+        % Tetrahedron viewed from the top, right, back corner
+        \begin{tikzpicture}[
+                scale=2.5,
+                % Adjusted perspective vectors for top-right-back view
+                x={(0.7cm,-0.2cm)},
+                y={(-0.7cm,-0.2cm)},
+                z={(0cm,0.8cm)}
+            ]
+            % Define the coordinates of the tetrahedron
+            \coordinate (A) at (0,0,0);     % Base vertex 1
+            \coordinate (B) at (1,0,0);     % Base vertex 2
+            \coordinate (C) at (0.5,0.866,0);  % Base vertex 3
+            \coordinate (D) at (0.5,0.433,0.816); % Top vertex
+
+            % Define the edges to be drawn
+            % Base edges
+            \draw[thick] (A) -- (B);
+            \draw[thick] (B) -- (C);
+            \draw[thick] (C) -- (A);
+
+            % Edges to the top vertex
+            \draw[thick] (A) -- (D);
+            \draw[thick] (B) -- (D);
+            \draw[thick] (C) -- (D);
+
+            % Draw the faces with subtle colors and controlled transparency
+            % Base face
+            \filldraw[red!70, opacity=0.3] (A) -- (B) -- (C) -- cycle;
+            % Side faces
+            \filldraw[orange!70, opacity=0.3] (A) -- (B) -- (D) -- cycle;
+            \filldraw[green!70, opacity=0.3] (B) -- (C) -- (D) -- cycle;
+            \filldraw[blue!70, opacity=0.3] (C) -- (A) -- (D) -- cycle;
+
+            % Add colored dots at vertices with black outlines for visibility
+            \filldraw[red, draw=black] (A) circle (1.5pt);
+            \filldraw[orange, draw=black] (B) circle (1.5pt);
+            \filldraw[green, draw=black] (C) circle (1.5pt);
+            \filldraw[blue, draw=black] (D) circle (1.5pt);
+
+            % Add small labels
+            \node[below=3pt, red] at (A) {\footnotesize 1};
+            \node[below=3pt, orange] at (B) {\footnotesize 2};
+            \node[left=3pt, green] at (C) {\footnotesize 3};
+            \node[above=3pt, blue] at (D) {\footnotesize 4};
         \end{tikzpicture}
     \end{center}
 }{
-
-
-    This ancient Pythagorean symbol represents the organization of space and the cosmos. The Tetractys has profound mathematical significance:
+    This ancient Pythagorean symbol encodes the organization of dimension, harmony, and recursion. The Tetractys has deep mathematical and symbolic significance:
 
     \begin{itemize}
-        \item The sum of its rows \(\purple{\Omega} = \red{1} + \orange{2} + \green{3} + \blue{4} = \purple{10}\) represents completeness and return to unity
-        \item It encodes the perfect musical intervals: \(\blue{4}:\green{3}\) (perfect fourth), \(\green{3}:\orange{2}\) (perfect fifth), and \(\orange{2}:\red{1}\) (octave)
-        \item It represents the \blue{four} dimensions of spacetime in a recursive structure
-        \item The \purple{ten} points may correspond to the \purple{ten} dimensions in certain string theory formulations
+        \item The sum \(\purple{\Omega} = \red{1} + \orange{2} + \green{3} + \blue{4} = \purple{10}\) represents recursive closure of four layers
+        \item It encodes perfect musical intervals:
+              \begin{itemize}
+                  \item \(\blue{4}:\green{3}\) (perfect fourth)
+                  \item \(\green{3}:\orange{2}\) (perfect fifth)
+                  \item \(\orange{2}:\red{1}\) (octave)
+              \end{itemize}
+        \item It represents the \blue{four} dimensions of spacetime in a nested, self-similar format
+        \item It is simultaneously:
+              \begin{itemize}
+                  \item the fourth \textbf{triangular number} \(t_4 = \frac{4(4+1)}{2} = 10\)
+                  \item the fourth \textbf{tetrahedral number} \(T_4 = \frac{4(4+1)(4+2)}{6} = 10\)
+              \end{itemize}
+              indicating rare numerical convergence
+        \item In certain string theory models, the number \(\purple{10}\) also coincides with the total spacetime dimensions required for consistency
     \end{itemize}
 }
 
 
 \genericbox[purple]{Significance}{
-    In our derivation, the Tetractys sum (\(\purple{\Omega}=10\)) serves as the base recursion depth, representing the fundamental dimensionality of recursive space. This is not arbitrary—it captures the minimal complexity needed to encode electromagnetic coupling across dimensional layers.
+    The Tetractys sum \(\purple{\Omega}=10\) is not arbitrary — it defines the minimum recursive depth required to encode the emergence of spatial interactions. It is the final natural number that is both triangular and tetrahedral, closing a dimensional recursion loop.
+
     \tcblower
-    The Tetractys provides the ideal recursion base because it represents the minimal complete system that can encode both spatial dimensions and their interactions. When this base is modulated by gravitational compression, it produces the fine-structure constant with remarkable precision.
+
+    Furthermore, three critical symmetry groups—SO(5), Sp(4), and the Poincaré group — all have exactly 10 generators. This symmetry convergence implies that \(\Omega = 10\) is a natural attractor of dimensional structure and may represent the smallest complete recursive field capable of generating coupling constants like \(\alpha\).
+
+    Thus, the Tetractys forms the recursion base of physical law. When modulated by gravitational compression, it produces the fine-structure constant with high precision.
 }
 
 
@@ -241,9 +295,10 @@ We define the following symbols according to our computational implementation:
 
 In its most elegant form, the inverse fine-structure constant emerges from what we call the \textbf{Dimensional Symmetry Equation}:
 
-\begin{equation}
-    \red{\alpha}^{-1} = \green{\zeta}^{\purple{\nabla}} + \frac{1}{\green{\zeta}^{\purple{\nabla}}} + 1
-\end{equation}
+\begin{align}
+    \red{\alpha}^{-1} & = \green{\zeta}^{\purple{\nabla}} + \frac{1}{\green{\zeta}^{\purple{\nabla}}} + 1 \\
+                      & = \green{\zeta}^{-\purple{\nabla}} + \green{\zeta}^{\purple{\nabla}} + 1
+\end{align}
 
 The key to this equation is the recursion depth \(\purple{\nabla}\), which we calculate using the \textbf{Cosmic Recursion Depth Formula}:
 

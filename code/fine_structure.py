@@ -46,6 +46,7 @@ y = Decimal("1.2207440846057594753616853491088319144324890862486")
 
 # z = (x^4)(y^4)
 z = (x ** 4) * (y ** 4)
+print("z", z)
 
 # Recursion dimension count exponent: (1 + 2 + 3 + 4) = 10
 tetractys_base = Decimal(1 + 2 + 3 + 4)
