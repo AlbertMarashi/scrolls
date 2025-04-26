@@ -18,7 +18,7 @@
 
 \definecolor{interpretationbox}{rgb}{0.4,0.2,0.9}
 \definecolor{genericboxcolor}{rgb}{0.4,0.4,0.4}
-\definecolor{teal}{rgb}{0.1,0.6,0.8}
+\definecolor{teal}{rgb}{0.08,0.65,0.7}
 \definecolor{green}{rgb}{0.0,0.6,0.3}
 
 % Create color commands for equations
@@ -28,7 +28,7 @@
 \newcommand{\purple}[1]{\textcolor[rgb]{0.5,0,0.5}{#1}}
 \newcommand{\red}[1]{\textcolor[rgb]{0.7, 0.3, 0.3}{#1}}
 \newcommand{\yellow}[1]{\textcolor[rgb]{0.5, 0.5, 0.2}{#1}}
-\newcommand{\teal}[1]{\textcolor[rgb]{0.1,0.6,0.8}{#1}}
+\newcommand{\teal}[1]{\textcolor[rgb]{0.08,0.65,0.7}{#1}}
 
 % Equation constants
 \newcommand{\VA}[0]{\red{\Lambda}}
@@ -128,6 +128,9 @@
 \end{abstract}
 
 \newpage
+\tableofcontents
+\newpage
+
 \section{Generalized Golden Ratio}
 
 \subsection{The Spatial Constant}
@@ -140,12 +143,18 @@ The emergence of \green{3D} space can be derived from the following equation:
 \begin{itemize}
     \item \(\red{d} = \red{1}\): Golden Ratio \(\red{\phi}\), \(x^2 = x + 1\)
     \item \(\orange{d} = \orange{2}\): Plastic Constant \(\orange{\rho}\), \(x^3 = x + 1\)
-    \item \(\green{d} = \green{3}\): Spatial Constant \(\green{S}\), \(x^4 = x + 1\)
+    \item \(\green{d} = \green{3}\): Spatial Constant\footnote{The term ``Spatial Constant'' is introduced by the authors to denote this specific root of $x^4 = x + 1$, which we propose has special significance for 3D space.} \(\green{S}\), \(x^4 = x + 1\)
 \end{itemize}
 
 
 \genericbox[teal]{Recursive Structure}{
     The Spatial Constant (with \(\purple{d}=\green{3}\)) corresponds to our physical world's dimensionality, yielding the roots \(\red{x}\) and \(\orange{y}\) that serve as the basis for our recursive formula.
+}
+
+\genericbox[green]{Connection to Quasirandom Sequences}{
+    The generalized golden ratio and related constants have profound significance for creating optimal distributions of points in space \cite{roberts2018}. These so-called "quasirandom sequences" achieve minimal discrepancy—meaning they distribute points as uniformly as possible throughout a space. The R-sequence, which generates points using irrational numbers like the golden ratio and its higher-dimensional generalizations, creates distributions that are remarkably well-balanced.
+
+    This mathematical structure may have cosmological implications. In the early universe, during the initial phases of structure formation, particles and energy might have been distributed according to such optimal patterns, maximizing spatial coverage while minimizing clustering. We are currently exploring this connection in separate work, investigating whether primordial fluctuations follow patterns consistent with these optimal spacetime tilings, potentially explaining observed anomalies in the cosmic microwave background.
 }
 
 We denote the negative and positive real roots of the spatial constant polynomial by \(\red{x}\) and \(\orange{y}\), respectively, where:
@@ -301,16 +310,11 @@ In its most elegant form, the inverse fine-structure constant emerges from what 
                       & = \green{\zeta}^{-\purple{\nabla}} + \green{\zeta}^{\purple{\nabla}} + 1
 \end{align}
 
-The key to this equation is the recursion depth \(\purple{\nabla}\), which we calculate using the \textbf{Cosmic Recursion Depth Formula}:
+The key to this equation is the recursion depth \(\purple{\nabla}\), which we calculate using the \textbf{Cosmic Recursion Depth Formula}. In pure vacuum space with no gravitational influences from matter, the time dilation factor \(\teal{\tau} = 1\), resulting in:
 
 \begin{align}
     \purple{\nabla} & = \purple{\Omega} \cdot \teal{\tau}^{\orange{y} + 1}
-\end{align}
-
-In pure vacuum space with no gravitational influences from matter, the time dilation factor \(\teal{\tau} = 1\), resulting in:
-
-\begin{align}
-    \purple{\nabla} & = \purple{\Omega} \cdot 1^{\orange{y} + 1}             \\
+                    & = \purple{\Omega} \cdot 1^{\orange{y} + 1}             \\
                     & = 10 \cdot 1^{\orange{1.2207} + 1}                     \\
                     & = 10 \quad \text{(since $1^n$ for any $n$ equals $1$)}
 \end{align}
@@ -352,10 +356,10 @@ In an idealized universal void with no gravitational time dilation effects:
 \end{equation}
 
 \genericbox[blue]{Initial Result}{
-    This calculation gives a result that approximates the observed inverse fine structure constant ($\blue{\alpha^{-1}} \approx 137.035999084$) but is not yet precise. This suggests that additional factors influence the constant in our physical reality.
+    This calculation gives a result that approximates the observed inverse fine structure constant ($\blue{\alpha^{-1}} \approx 137.035999084$) but does not fully match the CODATA values. This suggests that additional factors influence the constant in our physical reality.
 }
 
-We propose that the recursion depth is not fixed at 10 in physical reality, but is modulated by local gravitational conditions. Gravity effectively compresses the recursion computation, slightly reducing the recursion depth.
+We propose that the recursion depth is not fixed at \(\purple{\Omega} = 10\) in physical reality, but is modulated by local gravitational conditions. Gravity effectively compresses the recursion computation, slightly reducing the recursion depth.
 
 \subsection{Gravitational Time Dilation}
 
@@ -423,7 +427,7 @@ where:
               \item Distance: $\teal{r}_{\boxtimes} = 7$ Mpc (megaparsecs, with $\sim$10--15\% uncertainty)
               \item Time dilation: \(\teal{\tau}_{\boxtimes} \approx 0.999999882791\)
           \end{itemize}
-          \footnote{The Local Sheet mass estimate is uncertain at roughly $\pm$25\%, reflecting observational uncertainties in group mass measurements (Tully et al. 2008, Tully et al. 2019).}
+          \footnote{The Local Sheet mass estimate is uncertain at roughly $\pm$25\%, reflecting observational uncertainties in group mass measurements \cite{tully2008, tully2019}.}
 \end{itemize}
 
 \newpage
@@ -438,7 +442,7 @@ Using all relevant gravitational sources:
 \end{equation}
 
 \genericbox[blue]{Final Result}{
-    This calculation matches the \textbf{CODATA} value with precision of \(\red{10}^{-10}\). Specifically, the latest CODATA 2022 value for the fine-structure constant is \(\alpha^{-1} = 137.035999177(21)\).
+    This calculation matches the \textbf{CODATA} value with precision of \(\red{10}^{-10}\). Specifically, the latest CODATA 2022 value for the fine-structure constant is \(\alpha^{-1} = 137.035999177(21)\) \cite{codata2022}.
 }
 
 \genericbox[orange]{Physical Interpretation}{
@@ -452,7 +456,7 @@ Using all relevant gravitational sources:
 
     By incorporating all major gravitational influences (Earth, Sun, Milky Way, and Local Sheet), our model achieves remarkable completeness, accounting for the full hierarchical structure of our local gravitational environment.
 
-    Moreover, laboratory and astrophysical experiments currently constrain any gravitational variation of \(\alpha\) to levels below \(10^{-7}\), consistent with the extremely small recursion corrections proposed here (Berengut et al., 2013).
+    Moreover, laboratory and astrophysical experiments currently constrain any gravitational variation of \(\alpha\) to levels below \(10^{-7}\), consistent with the extremely small recursion corrections proposed here \cite{berengut2013}.
 }
 
 \section{Beyond Back-of-Envelope Precision}
@@ -465,8 +469,6 @@ The model could achieve even greater precision through refinements such as:
     \item Incorporating the differential density of galactic spiral arms and our precise position within them
     \item Calculating individual gravitational contributions from nearby massive galaxies in the Local Group
     \item Accounting for density variations within the Local Sheet and Local Void
-    \item Including the effects of dark matter halos with precise density profiles
-    \item Modeling the Shapiro time delay effects from intermediate mass distributions
     \item Incorporating gravitational frame-dragging from rotating massive bodies
     \item Accounting for anisotropies in local spacetime curvature
 \end{itemize}
@@ -524,9 +526,11 @@ This profound early-universe behavior explains why matter could not form immedia
 In this framework, recombination was delayed not just by temperature and density, but because the local recursion depth was \textbf{too shallow} to allow quantum structure. As the universe expanded, \(\teal{\tau}\) increased, allowing \(\purple{\nabla}\) to reach a threshold where \(\red{\alpha}\) weakened to its present value and atoms could finally form.
 }
 
+\newpage
+
 \subsection{Phase Transition to Structure}
 
-Observational constraints from Big Bang Nucleosynthesis and the Cosmic Microwave Background indicate that by the time of recombination (\(\sim 380,000\) years after the Big Bang), \(\alpha\) had stabilized within \(\sim 0.4\%\) of its present value (Planck Collaboration, 2016).
+Observational constraints from Big Bang Nucleosynthesis and the Cosmic Microwave Background indicate that by the time of recombination (\(\sim 380,000\) years after the Big Bang), \(\alpha\) had stabilized within \(\sim 0.4\%\) of its present value \cite{planck2016}.
 
 Once gravitational time dilation relaxed and \(\purple{\nabla}\) approached \purple{10}:
 \[
@@ -546,7 +550,7 @@ This enabled:
 }
 
 \question{Could this predict a measurable $\red{\alpha}(z)$?}{
-    Yes. This model suggests a smooth variation in $\red{\alpha}$ with redshift $z$, governed by the evolution of the gravitational potential across cosmic time. Detecting such a variation via high-redshift quasar absorption lines or early-universe spectroscopy would strongly validate this theory.
+    Yes. This model suggests a smooth variation in $\red{\alpha}$ with redshift $z$, governed by the evolution of the gravitational potential across cosmic time. Detecting such a variation via high-redshift quasar absorption lines or early-universe spectroscopy would strongly validate this theory \cite{murphy2003, uzan2011}.
 }
 
 
@@ -554,7 +558,7 @@ This enabled:
 
 \section{The Observer-Dependent Nature of \(\red{\alpha}\)}
 
-Our findings suggest a profound explanation for why the fine-structure constant has resisted derivation for over a century: previous attempts assumed \(\red{\alpha}\) to be a universal invariant, when it may actually be an observer-dependent value emerging from local gravitational conditions.
+Our findings suggest a profound explanation for why the fine-structure constant has resisted derivation for decades: previous attempts assumed \(\red{\alpha}\) to be a universal invariant, when it may actually be an observer-dependent value emerging from local gravitational conditions.
 
 \genericbox[red]{Reference Frame Dependence}{
     The fine-structure constant we measure on Earth is specifically calibrated to our unique position within:
@@ -578,6 +582,155 @@ Our findings suggest a profound explanation for why the fine-structure constant 
     \end{itemize}
 }
 
+\newpage
+\section{Predictions and Experimental Tests}
+
+Our framework, wherein the fine-structure constant $\alpha$ emerges from recursive spatial compression influenced by gravitational potentials, makes several qualitative predictions regarding its behavior under different conditions:
+
+\subsection{Variation of $\alpha$ with Gravitational Potential (Solar Probe Tests)}
+
+We predict that ultra-precise atomic spectroscopy instruments aboard solar probe missions could detect variations in the measured value of $\alpha$ as they traverse the Sun's gravitational well. Specifically, probes designed to make close approaches or even terminal descents into the solar atmosphere would experience significantly deeper gravitational potentials than achievable on Earth. The effect is expected to be small but potentially measurable with specialized instrumentation designed to transmit spectroscopic data until the final moments before destruction in the solar environment.
+
+\subsection{Shift in $\alpha$ Near Compact Objects}
+
+In the strong gravitational fields surrounding compact objects like white dwarfs and neutron stars, $\alpha$ is predicted to vary slightly compared to interstellar space. While the exact magnitude remains to be modeled, any detectable variation would offer direct evidence of gravitational recursion compression effects.
+
+\subsection{Evolution of $\alpha$ Across Cosmic Time}
+
+Because the early universe featured significantly higher spacetime curvature, we predict that $\alpha$ should vary slightly with cosmic redshift. In particular, we expect $\alpha$ to have evolved smoothly from higher values in the distant past toward its present value as the universe expanded and curvature relaxed.
+
+\subsection{Anisotropy in $\alpha$ Across the Sky}
+
+Given the asymmetry of local cosmic structures such as the Local Sheet and Local Void, we predict a possible directional variation in $\alpha$ across the sky. This would manifest as a small anisotropy in measurements of $\alpha$ based on observational direction, and could be explored through large-scale quasar absorption studies.
+
+\subsection{Suppression of $\alpha$ Near Supermassive Black Holes}
+
+In the regions near supermassive black holes (e.g., Sagittarius A* at the center of the Milky Way), where gravitational fields are extreme, $\alpha$ may be measurably suppressed compared to ambient galactic values. Future observational campaigns targeting atomic transitions in these regions could provide critical tests.
+
+\bigskip
+
+\noindent A summary of these qualitative predictions is provided below:
+
+\begin{center}
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Prediction}                 & \textbf{Test Method}                    & \textbf{Status}         \\
+        \hline
+        Variation of $\alpha$ in solar well & Solar probe spectroscopy                & Near-future feasibility \\
+        \hline
+        Variation near compact stars        & Stellar spectroscopy                    & Ongoing constraints     \\
+        \hline
+        Evolution of $\alpha$ with redshift & Quasar absorption spectra               & Ongoing analysis        \\
+        \hline
+        Sky anisotropy of $\alpha$          & Directional cosmic surveys              & Under investigation     \\
+        \hline
+        Suppression near black holes        & VLBI observations near galactic centers & Future opportunity      \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\bigskip
+
+The quantitative magnitude and functional form of these variations require further theoretical modeling and detailed simulation, but the conceptual prediction that $\alpha$ is not globally invariant, and instead depends on local gravitational conditions, is a robust consequence of the recursion framework.
+
+\newpage
+
+\section{Further Exploration and Extensions}
+
+While the current formulation reconstructs the fine-structure constant $\alpha$ based primarily on gravitational recursion effects at low-energy, cosmological scales, several important avenues for extension naturally arise:
+
+\subsection{Energy-Level Dependence of $\alpha$}
+
+At higher energy scales, such as those probed by particle accelerators like the Large Hadron Collider (LHC), the electromagnetic coupling is known to "run". In future work, we propose investigating whether the recursion-based formula can be generalized to incorporate energy scale $E$ as an additional modulation factor on the recursion depth $\nabla$.
+
+\subsection{Implications for Galactic Dynamics and Dark Matter}
+
+Another profound extension of this framework concerns galactic rotation curves. Observations indicate that stars in galaxies orbit faster than expected based on visible mass, leading to the postulation of dark matter halos.
+
+We propose investigating whether spatial recursion compression effects, varying across galactic structures, could modify the effective electromagnetic coupling or inertial behavior of masses. Specifically:
+
+\begin{itemize}
+    \item Localized variations in $\alpha$ may subtly influence gravitational binding or momentum conservation at large scales.
+    \item Recursive structure modulation could generate "effective mass" effects, mimicking dark matter without invoking exotic unseen matter.
+\end{itemize}
+
+If confirmed, this would offer a radically different explanation for flat rotation curves and gravitational lensing anomalies observed in galaxies and galaxy clusters.
+
+\subsection{Explaining Extreme Astrophysical Phenomena}
+
+The recursion framework for the fine-structure constant may provide novel explanations for several extreme astrophysical phenomena where conventional models face challenges. In regions of extreme gravitational potential, the local variation in $\alpha$ could significantly alter electromagnetic interactions, potentially explaining:
+
+\subsubsection{Quasar Jets}
+
+Active galactic nuclei (AGNs) and quasars produce relativistic jets extending millions of light-years. The recursion model suggests:
+
+\begin{itemize}
+    \item Near supermassive black holes, extreme recursion compression could modify electromagnetic coupling, enhancing magnetic field generation.
+    \item Spatial variation in $\alpha$ along the jet axis might create natural electromagnetic gradients that help collimate and accelerate charged particles.
+    \item The remarkable straightness and stability of some jets over vast distances could result from recursion-stabilized electromagnetic interactions.
+\end{itemize}
+
+This framework might resolve the long-standing puzzle of how these jets maintain coherence over such extreme distances without significant dissipation.
+
+\subsubsection{Black Hole Physics}
+
+Near black hole event horizons, the recursion depth $\nabla$ approaches extreme values, potentially:
+
+\begin{itemize}
+    \item Modifying quantum field behavior near the horizon, affecting Hawking radiation characteristics
+    \item Creating a gradient in effective electromagnetic coupling that influences accretion disk dynamics
+    \item Explaining observed high-energy emissions from black hole coronae through modified interaction cross-sections
+\end{itemize}
+
+The framework may offer insights into the information paradox by suggesting that physical "constants" themselves encode information about the local gravitational environment.
+
+\subsubsection{Compact Stellar Objects}
+
+For neutron stars and white dwarfs, the recursion model predicts:
+
+\begin{itemize}
+    \item Neutron stars: Modified $\alpha$ values throughout the extreme density gradient could influence nuclear and electromagnetic interactions, potentially explaining observed pulsar emission mechanisms and magnetar field strengths.
+    \item White dwarfs: Altered electromagnetic coupling could affect electron degeneracy pressure and cooling rates, providing corrections to current white dwarf evolution models.
+    \item Binary systems: In compact object mergers, rapidly changing gravitational potentials would create dynamic $\alpha$ gradients that might produce distinctive electromagnetic signatures preceding gravitational wave events.
+\end{itemize}
+
+These extreme astrophysical laboratories offer ideal testing grounds for the recursion framework, as they represent the most extreme gravitational environments where variations in fundamental constants would be most pronounced and potentially observable.
+
+
+\subsection{Towards High-Precision Simulations}
+
+To refine and validate these ideas, future simulations should incorporate:
+
+\begin{itemize}
+    \item Detailed mass distributions including spiral arms, galactic bulge, dark halo profiles
+    \item Nearest massive stars, molecular clouds, and intergalactic matter
+    \item Dynamic recursion recalculation based on local spacetime curvature at each point
+    \item Relativistic frame-dragging and non-spherical mass geometries
+\end{itemize}
+
+This would enable far more accurate derivations of $\alpha$ across different cosmic environments, and possibly reveal further corrections to gravitational theory at galactic and intergalactic scales.
+
+\newpage
+
+\section{Next Steps}
+
+Based on the promising results achieved here, immediate priorities for further research include:
+
+\begin{itemize}
+    \item Extending the recursion depth formula to incorporate energy dependence and compare against experimental running of $\alpha$ at collider energies.
+    \item Modeling the spatial recursion field across spiral galaxies to test whether emergent dynamics can account for observed stellar rotation curves without dark matter.
+    \item Refining gravitational time dilation corrections by including:
+          \begin{itemize}
+              \item Galactic spiral arm mass distributions
+              \item Nearby stellar mass concentrations
+              \item Neighboring galaxies within the Local Group
+          \end{itemize}
+    \item Developing numerical simulations that recalculate $\nabla$ and $\alpha$ on a grid-based cosmic environment.
+    \item Designing observational tests to detect $\alpha$ variations across gravitational and spatial gradients at galactic scales.
+\end{itemize}
+
+Through these steps, the recursion-based model could be rigorously evaluated against current astrophysical observations and fundamental physics experiments, offering a new lens on both particle physics and cosmological structure formation.
+
 \section{Conclusion}
 
 By combining the recursive geometry of the \green{Spatial Constant} with gravitational recursion compression from all relevant local sources (Earth, Sun, Milky Way, and the Local Sheet), we reconstruct the \red{fine-structure constant} as a projected outcome of local spacetime conditions with extraordinary precision ($10^{-10}$). This framework implies that physical constants are not universal invariants, but outputs of curved recursive computation across dimensional layers, precisely modulated by the complete gravitational environment.
@@ -590,16 +743,68 @@ By combining the recursive geometry of the \green{Spatial Constant} with gravita
     This framework suggests that other dimensionless constants might be derivable through similar recursive structures, each emerging from the interplay between mathematical patterns and local spacetime geometry. Future work will explore the application of this model to constants like the proton-electron mass ratio.
 }
 
-\section*{References}
+\newpage
 
-\begin{itemize}
-    \item CODATA 2022, Fundamental Physical Constants, Committee on Data for Science and Technology.
-    \item Tully, R.B., et al. (2008). Our Peculiar Motion Away from the Local Void. The Astrophysical Journal, 676(1): 184.
-    \item Tully, R.B., et al. (2019). Galaxy Groups Within 3500 km/s. The Astrophysical Journal, 880(1): 24.
-    \item Planck Collaboration (2016). Planck 2015 Results. Astronomy \& Astrophysics, 594: A13.
-    \item Murphy, M.T., Webb, J.K., Flambaum, V.V. (2003). Further evidence for a variable fine-structure constant from Keck/HIRES QSO absorption spectra. Monthly Notices of the Royal Astronomical Society, 345(2): 609-638.
-    \item Uzan, J-P. (2011). Varying Constants, Gravitation and Cosmology. Living Reviews in Relativity, 14: 2.
-    \item Berengut, J.C., et al. (2013). Limits on Variations of the Fine-Structure Constant in Strong Gravitational Fields. Physical Review Letters, 111(1): 010801.
-\end{itemize}
+\begin{thebibliography}{99}
+
+    \bibitem{codata2022}
+    CODATA (2022).
+    ``Fundamental Physical Constants,''
+    \href{https://physics.nist.gov/cuu/Constants/index.html}{NIST Reference on Constants, Units and Uncertainty}.
+
+    \bibitem{roberts2018}
+    Roberts, M. (2018).
+    ``The Unreasonable Effectiveness of Quasirandom Sequences,''
+    \href{https://extremelearning.com.au/unreasonable-effectiveness-of-quasirandom-sequences/}{Extreme Learning}.
+
+    \bibitem{tully2008}
+    Tully, R.B., Shaya, E.J., Karachentsev, I.D., Courtois, H.M., Kocevski, D.D., Rizzi, L., \& Peel, A. (2008).
+    ``Our Peculiar Motion Away from the Local Void.''
+    \emph{The Astrophysical Journal}, 676(1): 184.
+    \href{https://doi.org/10.1086/529487}{DOI: 10.1086/529487}
+
+    \bibitem{tully2019}
+    Tully, R.B., Courtois, H.M., \& Sorce, J.G. (2019).
+    ``Galaxy Groups Within 3500 km/s.''
+    \emph{The Astrophysical Journal}, 880(1): 24.
+    \href{https://doi.org/10.3847/1538-4357/ab24a9}{DOI: 10.3847/1538-4357/ab24a9}
+
+    \bibitem{planck2016}
+    Planck Collaboration (2016).
+    ``Planck 2015 Results - XIII. Cosmological Parameters.''
+    \emph{Astronomy \& Astrophysics}, 594: A13.
+    \href{https://arxiv.org/abs/1502.01589}{arXiv:1502.01589}
+
+    \bibitem{murphy2003}
+    Murphy, M.T., Webb, J.K., \& Flambaum, V.V. (2003).
+    ``Further evidence for a variable fine-structure constant from Keck/HIRES QSO absorption spectra.''
+    \emph{Monthly Notices of the Royal Astronomical Society}, 345(2): 609-638.
+    \href{https://arxiv.org/abs/astro-ph/0306483}{arXiv:astro-ph/0306483}
+
+    \bibitem{uzan2011}
+    Uzan, J-P. (2011).
+    ``Varying Constants, Gravitation and Cosmology.''
+    \emph{Living Reviews in Relativity}, 14: 2.
+    \href{https://link.springer.com/article/10.12942/lrr-2011-2}{DOI: 10.12942/lrr-2011-2}
+
+    \bibitem{berengut2013}
+    Berengut, J.C., Flambaum, V.V., Ong, A., Webb, J.K., Barrow, J.D., Baum, M.A., B\"ohm, S., Uzan, J.P. (2013).
+    ``Limits on Variations of the Fine-Structure Constant in Strong Gravitational Fields.''
+    \emph{Physical Review Letters}, 111(1): 010801.
+    \href{https://doi.org/10.1103/PhysRevLett.111.010801}{DOI: 10.1103/PhysRevLett.111.010801}
+
+    \bibitem{tully2015}
+    Tully, R.B., Courtois, H., Hoffman, Y., \& Pomarède, D. (2015).
+    ``The Laniakea Supercluster of Galaxies.''
+    \emph{Nature}, 513(7516): 71-73.
+    \href{https://doi.org/10.1038/nature13674}{DOI: 10.1038/nature13674}
+
+    \bibitem{webb2011}
+    Webb, J.K., King, J.A., Murphy, M.T., Flambaum, V.V., Carswell, R.F., \& Bainbridge, M.B. (2011).
+    ``Indications of a Spatial Variation of the Fine Structure Constant.''
+    \emph{Physical Review Letters}, 107(19): 191101.
+    \href{https://doi.org/10.1103/PhysRevLett.107.191101}{DOI: 10.1103/PhysRevLett.107.191101}
+
+\end{thebibliography}
 
 \end{document}
