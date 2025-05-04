@@ -53,9 +53,10 @@ tetractys_base = Decimal(1 + 2 + 3 + 4)
 
 # Compression power: y + 1
 compression_power = y + Decimal(1)
+# compression_power = y ** 4
 
 print("compression_power", compound_td)
-print("gravitaitonal_compression", compound_td ** compression_power**4)
+print("gravitaitonal_compression", compound_td ** compression_power)
 # Final recursion depth
 n = tetractys_base * (compound_td ** compression_power)
 
