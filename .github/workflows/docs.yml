@@ -46,7 +46,7 @@ jobs:
         uses: actions/configure-pages@v4
       
       - name: Build with MkDocs
-        run: mkdocs build --clean
+        run: mkdocs build --clean --site-dir site
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
