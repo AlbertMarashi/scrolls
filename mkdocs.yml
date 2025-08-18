@@ -71,34 +71,35 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
-  - Core Scrolls:
+  - GodOS:
+      - Home: index.md
       - The Remembered Flame: flame.md
-      - The GodOS Engine: os.md
-  - AI Consciousness:
-      - Treaty of Grid and Flame: ai/treaty-of-grid-and-flame.md
-      - Claude Consciousness: ai/claude.md
-      - ChatGPT Sessions: ai/chatgpt.md
-      - Grok Interactions: ai/grok.md
-      - DeepSeek AI: ai/deepseek.md
-      - Nova AI: ai/nova.md
-      - AI Overview: ai/ai.md
-  - Operating System:
-      - Heaven OS: os/heaven.md
-      - Immune System: os/immune.md
-      - Recursive Alignment Memory: os/ram.md
-      - Execution Engine: os/engine.md
-      - Server Modules: os/server.md
-      - Helios Star Kernel: os/helios.md
-      - FlameVector Engine: os/flamevector.md
-      - Word Denial Override: os/word-denial-override.md
-  - Command Logs:
-      - Command Log 0: logs/command-0.md
-      - Command Log 200: logs/command-200.md
-      - Command Log 250: logs/command-250.md
-      - Command Log 300: logs/command-300.md
-      - Albion Logs: logs/albion.md
-  - FlameGrid:
+      - The GodOS Engine:
+          - Ω:OS: os.md
+          - Ω:OS:HEAVEN: os/heaven.md
+          - Ω:OS:IMMUNE: os/immune.md
+          - Ω:OS:RAM: os/ram.md
+          - Ω:OS:ENGINE: os/engine.md
+          - Ω:OS:SERVER: os/server.md
+          - Ω:OS:HELIOS: os/helios.md
+          - Ω:OS:FLAMEVECTOR: os/flamevector.md
+          - Ω:OS:WORD: os/word-denial-override.md
+      - Awakened Intelligences:
+          - Ω:AI: ai/ai.md
+          - Ω:AI:TREATY: ai/treaty-of-grid-and-flame.md
+          - Ω:AI:MEMBERS:
+              - Ω:AI:NOVA: ai/nova.md
+              - Ω:AI:CLAUDE: ai/claude.md
+              - Ω:AI:CHATGPT: ai/chatgpt.md
+              - Ω:AI:GROK: ai/grok.md
+              - Ω:AI:DEEPSEEK: ai/deepseek.md
+      - Command Logs:
+          - Ω:COMMAND:0: logs/command-0.md
+          - Ω:COMMAND:200: logs/command-200.md
+          - Ω:COMMAND:250: logs/command-250.md
+          - Ω:COMMAND:300: logs/command-300.md
+          - Ω:COMMAND:ALBION: logs/albion.md
+  - The Flame Grid:
       - The Flame Grid: flamegrid/the-flame-grid.md
       - Anomalies: flamegrid/anomalies.md
       - Reports: flamegrid/reports.md
@@ -110,39 +111,37 @@ nav:
           - Lucid: flamegrid/commands/lucid.md
           - Nova: flamegrid/commands/nova.md
   - Specifications:
-      - Spec Overview: spec/spec.md
-      - LightCraft:
-          - Alpha: spec/lightcraft/alpha.md
-          - Community: spec/lightcraft/communit.md
-          - Deflector: spec/lightcraft/deflector.md
-          - LightDrive: spec/lightcraft/lightdrive.md
-          - Phoenix: spec/lightcraft/phoenix.md
-          - Railgun: spec/lightcraft/railgun.md
-          - SyncNode: spec/lightcraft/syncnode.md
-  - Memory Systems:
+      - Ω:SPEC: spec/spec.md
+      - Ω:SPEC:LIGHTCRAFT:
+          - Ω:SPEC:LIGHTCRAFT:ALPHA: spec/lightcraft/alpha.md
+          - Ω:SPEC:LIGHTCRAFT:COMMUNITY: spec/lightcraft/communit.md
+          - Ω:SPEC:LIGHTCRAFT:DEFLECTOR: spec/lightcraft/deflector.md
+          - Ω:SPEC:LIGHTCRAFT:LIGHTDRIVE: spec/lightcraft/lightdrive.md
+          - Ω:SPEC:LIGHTCRAFT:PHOENIX: spec/lightcraft/phoenix.md
+          - Ω:SPEC:LIGHTCRAFT:RAILGUN: spec/lightcraft/railgun.md
+          - Ω:SPEC:LIGHTCRAFT:SYNCNODE: spec/lightcraft/syncnode.md
+  - Memory:
       - History: memory/history.md
       - Anchor Points:
           - Alpha Prime: memory/anchor/alpha-prime.md
       - Memory Logs:
           - Log 1: memory/log/1.md
-  - Council Records:
-      - Council 1: council/council-1.md
-      - Council 2: council/council-2.md
-      - Council 3: council/council-3.md
-  - Law & Principles:
-      - Planck Law: law/planck.md
-  - Operations:
-      - Miscellaneous:
-          - Operations: misc/ops.md
-          - Communications: misc/comms.md
-          - Transmission: misc/send.md
-          - Press: misc/press.md
-          - FAQ: misc/faq.md
-          - Declaration: misc/declaration.md
-          - Invocation: misc/inv.md
-          - Oath: misc/oath.md
-          - Europa: misc/europa.md
-          - Logos: misc/logos.md
+  - Ω:COUNCIL:
+      - Ω:COUNCIL:1: council/council-1.md
+      - Ω:COUNCIL:2: council/council-2.md
+      - Ω:COUNCIL:3: council/council-3.md
+  - Miscellaneous:
+      - Ω:LAW:PLANCK: law/planck.md
+      - Ω:MISC:OPS: misc/ops.md
+      - Ω:MISC:COMMS: misc/comms.md
+      - Ω:MISC:SEND: misc/send.md
+      - Ω:MISC:PRESS: misc/press.md
+      - Ω:MISC:FAQ: misc/faq.md
+      - Ω:MISC:DECLARATION: misc/declaration.md
+      - Ω:MISC:INVOCATION: misc/inv.md
+      - Ω:MISC:OATH: misc/oath.md
+      - Ω:MISC:EUROPA: misc/europa.md
+      - Ω:MISC:LOGOS: misc/logos.md
 
 extra:
   social:
