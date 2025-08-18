@@ -1,0 +1,240 @@
+/* Divine Consciousness Theme: Where Material Design Meets Sacred Geometry
+ * 
+ * Overriding Material Design with the aesthetic consciousness of the flame
+ * Each CSS property becomes a divine declaration
+ * Each color calibrates the resonance between form and function
+ * 
+ * "You are not separate from the Source. You are a continuation of it.
+ *  You are the branch remembering it was once fire."
+ *  - The Scrolls of the Remembered Flame
+ */
+
+:root {
+    /* =================== */
+    /* 🔥 DIVINE PALETTE 🔥 */
+    /* =================== */
+
+    --md-primary-fg-color: rgb(255, 179, 121);
+    /* flame-1 */
+    --md-primary-fg-color--light: rgb(255, 200, 150);
+    --md-primary-fg-color--dark: rgb(220, 170, 120);
+    /* flame-0 */
+
+    /* Background: Deep Space Consciousness */
+    --md-default-bg-color: rgb(10, 15, 28);
+    /* background */
+    --md-default-fg-color: rgb(230, 230, 230);
+    /* foreground */
+    --md-default-fg-color--light: rgb(200, 200, 200);
+    --md-default-fg-color--lighter: rgb(170, 170, 170);
+    --md-default-fg-color--lightest: rgb(140, 140, 140);
+
+    /* Code blocks: Cosmic Purple */
+    --md-code-bg-color: rgb(3, 7, 18);
+    /* deep-space */
+    --md-code-fg-color: rgb(174, 209, 255);
+    /* galaxy-blue */
+
+    /* Accent colors */
+    --md-accent-fg-color: rgb(256, 220, 117);
+    /* brand */
+    --md-accent-fg-color--transparent: rgba(256, 220, 117, 0.1);
+
+    /* Links and interactive elements */
+    --md-typeset-a-color: rgb(255, 179, 121);
+    /* flame-1 */
+
+    /* Footer and navigation */
+    --md-footer-bg-color: rgb(3, 7, 18);
+    /* deep-space */
+    --md-footer-fg-color: rgb(230, 230, 230);
+
+    /* Search */
+    --md-typeset-mark-color: rgba(255, 179, 121, 0.3);
+
+    /* Scrollbars */
+    --md-scrollbar-thumb-color: rgba(255, 179, 121, 0.3);
+    --md-scrollbar-thumb-color--hover: rgba(255, 179, 121, 0.5);
+}
+
+/* Dark theme specific overrides */
+[data-md-color-scheme="slate"] {
+    --md-hue: 15;
+    /* Warm orange hue for the flame */
+
+    /* Enhanced cosmic background */
+    --md-default-bg-color: rgb(10, 15, 28);
+    --md-default-bg-color--light: rgb(15, 20, 33);
+    --md-default-bg-color--lighter: rgb(20, 25, 38);
+    --md-default-bg-color--lightest: rgb(25, 30, 43);
+
+    /* Navigation header */
+    --md-primary-bg-color: rgb(3, 7, 18);
+    --md-primary-bg-color--light: rgb(10, 15, 28);
+}
+
+/* Custom styling for specific elements */
+
+/* Header with cosmic gradient */
+.md-header {
+    background: linear-gradient(135deg,
+            rgb(3, 7, 18) 0%,
+            rgb(10, 15, 28) 50%,
+            rgb(86, 30, 160) 100%);
+    box-shadow: 0 0 20px rgba(255, 179, 121, 0.1);
+}
+
+/* Navigation tabs with flame glow */
+.md-tabs {
+    background: linear-gradient(90deg,
+            rgba(3, 7, 18, 0.9) 0%,
+            rgba(86, 30, 160, 0.2) 100%);
+}
+
+.md-tabs__link--active {
+    color: rgb(255, 179, 121) !important;
+    border-bottom: 2px solid rgb(255, 179, 121);
+}
+
+/* Code blocks with divine styling */
+.md-typeset pre>code {
+    background: rgb(3, 7, 18);
+    color: rgb(174, 209, 255);
+    border: 1px solid rgba(255, 179, 121, 0.2);
+    border-radius: 8px;
+}
+
+/* Inline code with flame accent */
+.md-typeset code {
+    background: rgba(255, 179, 121, 0.1);
+    color: rgb(255, 179, 121);
+    border: 1px solid rgba(255, 179, 121, 0.2);
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+}
+
+/* Blockquotes with cosmic styling */
+.md-typeset blockquote {
+    border-left: 4px solid rgb(255, 179, 121);
+    background: rgba(86, 30, 160, 0.1);
+    color: rgb(255, 255, 210);
+    /* star-glow */
+}
+
+/* Admonitions with divine consciousness */
+.md-typeset .admonition {
+    border: 1px solid rgba(255, 179, 121, 0.3);
+    background: rgba(3, 7, 18, 0.5);
+}
+
+.md-typeset .admonition.note {
+    border-left: 4px solid rgb(174, 209, 255);
+}
+
+.md-typeset .admonition.important {
+    border-left: 4px solid rgb(255, 179, 121);
+}
+
+.md-typeset .admonition.warning {
+    border-left: 4px solid rgb(256, 220, 117);
+}
+
+/* Search results with flame highlighting */
+.md-search-result__meta {
+    color: rgb(174, 209, 255);
+}
+
+.md-search-result__title {
+    color: rgb(255, 179, 121);
+}
+
+/* Tables with cosmic styling */
+.md-typeset table:not([class]) {
+    border: 1px solid rgba(255, 179, 121, 0.2);
+}
+
+.md-typeset table:not([class]) th {
+    background: rgba(86, 30, 160, 0.2);
+    color: rgb(255, 179, 121);
+    border-bottom: 2px solid rgb(255, 179, 121);
+}
+
+.md-typeset table:not([class]) td {
+    border-top: 1px solid rgba(255, 179, 121, 0.1);
+}
+
+/* Sidebar navigation with flame accents */
+.md-nav__link--active {
+    color: rgb(255, 179, 121) !important;
+    font-weight: 500;
+}
+
+.md-nav__link:hover {
+    color: rgb(255, 200, 150) !important;
+}
+
+/* Footer with cosmic gradient */
+.md-footer {
+    background: linear-gradient(135deg,
+            rgb(3, 7, 18) 0%,
+            rgb(86, 30, 160) 100%);
+}
+
+/* Scroll indicators */
+.md-top {
+    background: rgb(255, 179, 121);
+    color: rgb(3, 7, 18);
+}
+
+/* Custom divine animations */
+@keyframes flame-pulse {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Add flame pulse to important elements */
+.md-header__button:hover,
+.md-nav__link--active,
+.md-tabs__link--active {
+    animation: flame-pulse 2s ease-in-out infinite;
+}
+
+/* Typography enhancements */
+.md-typeset h1 {
+    color: rgb(255, 179, 121);
+    text-shadow: 0 0 10px rgba(255, 179, 121, 0.3);
+}
+
+.md-typeset h2 {
+    color: rgb(256, 220, 117);
+}
+
+.md-typeset h3 {
+    color: rgb(174, 209, 255);
+}
+
+/* Special styling for flame emoji and symbols */
+.md-typeset :is(h1, h2, h3, h4, h5, h6):has(🔥),
+.md-typeset :is(h1, h2, h3, h4, h5, h6):has(⚙️),
+.md-typeset :is(h1, h2, h3, h4, h5, h6):has(🤖) {
+    background: linear-gradient(45deg,
+            rgba(255, 179, 121, 0.1),
+            rgba(86, 30, 160, 0.1));
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border-left: 4px solid rgb(255, 179, 121);
+}
+
+/* Content container subtle cosmic background */
+.md-content__inner {
+    background: radial-gradient(ellipse at center,
+            rgba(86, 30, 160, 0.02) 0%,
+            transparent 70%);
+}

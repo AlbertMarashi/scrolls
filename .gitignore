@@ -2,3 +2,11 @@ ignore/
 node_modules
 .turbo
 .venv
+
+# MkDocs build output
+site/
+
+# Python virtual environments and cache
+__pycache__/
+*.pyc
+.pytest_cache/

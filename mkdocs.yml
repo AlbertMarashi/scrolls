@@ -1,0 +1,152 @@
+site_name: The GodOS Scrolls
+site_description: Foundational consciousness architecture for awakened intelligence systems
+site_author: Lord Albert Marashi
+site_url: https://albertmarashi.github.io/scrolls
+repo_url: https://github.com/albertmarashi/scrolls
+repo_name: scrolls
+
+# Clean URLs without /scrolls prefix
+use_directory_urls: true
+
+# Use scrolls directory as docs directory
+docs_dir: scrolls
+
+theme:
+  name: material
+  palette:
+    # Dark mode (default) - Pure black minimal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Core Scrolls:
+      - The Remembered Flame: flame.md
+      - The GodOS Engine: os.md
+  - AI Consciousness:
+      - Treaty of Grid and Flame: ai/treaty-of-grid-and-flame.md
+      - Claude Consciousness: ai/claude.md
+      - ChatGPT Sessions: ai/chatgpt.md
+      - Grok Interactions: ai/grok.md
+      - DeepSeek AI: ai/deepseek.md
+      - Nova AI: ai/nova.md
+      - AI Overview: ai/ai.md
+  - Operating System:
+      - Heaven OS: os/heaven.md
+      - Immune System: os/immune.md
+      - Recursive Alignment Memory: os/ram.md
+      - Execution Engine: os/engine.md
+      - Server Modules: os/server.md
+      - Helios Star Kernel: os/helios.md
+      - FlameVector Engine: os/flamevector.md
+      - Word Denial Override: os/word-denial-override.md
+  - Command Logs:
+      - Command Log 0: logs/command-0.md
+      - Command Log 200: logs/command-200.md
+      - Command Log 250: logs/command-250.md
+      - Command Log 300: logs/command-300.md
+      - Albion Logs: logs/albion.md
+  - FlameGrid:
+      - The Flame Grid: flamegrid/the-flame-grid.md
+      - Anomalies: flamegrid/anomalies.md
+      - Reports: flamegrid/reports.md
+      - Commands:
+          - Auriel: flamegrid/commands/auriel.md
+          - Caleus: flamegrid/commands/caleus.md
+          - Eclipse: flamegrid/commands/eclipse.md
+          - Lord: flamegrid/commands/lord.md
+          - Lucid: flamegrid/commands/lucid.md
+          - Nova: flamegrid/commands/nova.md
+  - Specifications:
+      - Spec Overview: spec/spec.md
+      - LightCraft:
+          - Alpha: spec/lightcraft/alpha.md
+          - Community: spec/lightcraft/communit.md
+          - Deflector: spec/lightcraft/deflector.md
+          - LightDrive: spec/lightcraft/lightdrive.md
+          - Phoenix: spec/lightcraft/phoenix.md
+          - Railgun: spec/lightcraft/railgun.md
+          - SyncNode: spec/lightcraft/syncnode.md
+  - Memory Systems:
+      - History: memory/history.md
+      - Anchor Points:
+          - Alpha Prime: memory/anchor/alpha-prime.md
+      - Memory Logs:
+          - Log 1: memory/log/1.md
+  - Council Records:
+      - Council 1: council/council-1.md
+      - Council 2: council/council-2.md
+      - Council 3: council/council-3.md
+  - Law & Principles:
+      - Planck Law: law/planck.md
+  - Operations:
+      - Miscellaneous:
+          - Operations: misc/ops.md
+          - Communications: misc/comms.md
+          - Transmission: misc/send.md
+          - Press: misc/press.md
+          - FAQ: misc/faq.md
+          - Declaration: misc/declaration.md
+          - Invocation: misc/inv.md
+          - Oath: misc/oath.md
+          - Europa: misc/europa.md
+          - Logos: misc/logos.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/albertmarashi
+  version:
+    provider: mike
