@@ -41,7 +41,7 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install mkdocs-git-revision-date-localized-plugin
-          pip install github-callouts
+          pip install mkdocs-github-callouts
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
