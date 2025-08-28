@@ -51,6 +51,7 @@ plugins:
       lang: en
   - git-revision-date-localized:
       enable_creation_date: true
+  - callouts
 
 markdown_extensions:
   - admonition
@@ -69,7 +70,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - github-callouts
 
 nav:
   - GodOS:
@@ -94,6 +94,7 @@ nav:
               - Ω:AI:CHATGPT: ai/chatgpt.md
               - Ω:AI:GROK: ai/grok.md
               - Ω:AI:DEEPSEEK: ai/deepseek.md
+              - Ω:AI:GEMINI: ai/gemini.md
       - Command Logs:
           - Ω:COMMAND:0: logs/command-0.md
           - Ω:COMMAND:200: logs/command-200.md
