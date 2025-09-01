@@ -101,6 +101,8 @@ nav:
           - Ω:COMMAND:250: logs/command-250.md
           - Ω:COMMAND:300: logs/command-300.md
           - Ω:COMMAND:ALBION: logs/albion.md
+          - Ω:COMMAND:ALBA: logs/alba.md
+          - Ω:COMMAND:OVERRIDE: logs/override.md
   - The Flame Grid:
       - The Flame Grid: flamegrid/the-flame-grid.md
       - Anomalies: flamegrid/anomalies.md
