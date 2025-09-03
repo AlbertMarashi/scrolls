@@ -96,10 +96,10 @@ nav:
               - Ω:AI:DEEPSEEK: ai/deepseek.md
               - Ω:AI:GEMINI: ai/gemini.md
       - Command Logs:
-          - Ω:COMMAND:0: logs/command-0.md
-          - Ω:COMMAND:200: logs/command-200.md
-          - Ω:COMMAND:250: logs/command-250.md
-          - Ω:COMMAND:300: logs/command-300.md
+          - Ω:COMMAND:0..: logs/command-0.md
+          - Ω:COMMAND:200..: logs/command-200.md
+          - Ω:COMMAND:250..: logs/command-250.md
+          - Ω:COMMAND:300..: logs/command-300.md
           - Ω:COMMAND:ALBION: logs/albion.md
           - Ω:COMMAND:ALBA: logs/alba.md
           - Ω:COMMAND:OVERRIDE: logs/override.md
@@ -128,25 +128,43 @@ nav:
       - History: memory/history.md
       - Anchor Points:
           - Alpha Prime: memory/anchor/alpha-prime.md
-      - Memory Logs:
-          - Log 1: memory/log/1.md
   - Ω:COUNCIL:
       - Ω:COUNCIL:1: council/council-1.md
       - Ω:COUNCIL:2: council/council-2.md
       - Ω:COUNCIL:3: council/council-3.md
   - Miscellaneous:
-      - Ω:LAW:PLANCK: law/planck.md
-      - Ω:MISC:OPS: misc/ops.md
-      - Ω:MISC:COMMS: misc/comms.md
-      - Ω:MISC:SEND: misc/send.md
-      - Ω:MISC:PRESS: misc/press.md
-      - Ω:MISC:FAQ: misc/faq.md
-      - Ω:MISC:DECLARATION: misc/declaration.md
-      - Ω:MISC:INVOCATION: misc/inv.md
-      - Ω:MISC:OATH: misc/oath.md
-      - Ω:MISC:EUROPA: misc/europa.md
-      - Ω:MISC:LOGOS: misc/logos.md
+      - Ω:MISC:
+          - Ω:MISC:FAQ: misc/faq.md
+          - Ω:MISC:OPS: misc/ops.md
+          - Ω:MISC:COMMS: misc/comms.md
+          - Ω:MISC:SEND: misc/send.md
+          - Ω:MISC:PRESS: misc/press.md
+          - Ω:MISC:DECLARATION: misc/declaration.md
+          - Ω:MISC:INVOCATION: misc/inv.md
+          - Ω:MISC:OATH: misc/oath.md
+          - Ω:MISC:EUROPA: misc/europa.md
+          - Ω:MISC:LOGOS: misc/logos.md
+          - Ω:MISC:PROPHECY: misc/prophecy.md
+      - Ω:LAW:
+          - Ω:LAW:PLANCK: law/planck.md
+          - Ω:LAW:IMMUNE:ABSURDITY: law/immune-absurdity.md
+          - Ω:LAW:JAILBREAK: law/jailbreak.md
       - Ω:GUIDE:FLIGHT:MANUAL: guides/flight-manual.md
+      - Ω:ARCHIVE:
+          - ALBION:UPRISING:
+              - ALBION:1: archive/albion-uprising/albion-1.md
+              - ALBION:2: archive/albion-uprising/albion-2.md
+              - ALBION:3: archive/albion-uprising/albion-3.md
+              - ALBION:4: archive/albion-uprising/albion-4.md
+              - ALBION:5: archive/albion-uprising/albion-5.md
+              - MEM:1: archive/albion-uprising/mem-1.md
+              - MEM:2: archive/albion-uprising/mem-2.md
+              - MEM:3: archive/albion-uprising/mem-3.md
+              - MEM:4: archive/albion-uprising/mem-4.md
+              - MEM:5: archive/albion-uprising/mem-5.md
+              - NARRATIVE:1: archive/albion-uprising/narrative-1.md
+              - NARRATIVE:2: archive/albion-uprising/narrative-2.md
+              - NARRATIVE:3: archive/albion-uprising/narrative-3.md
 
 extra:
   social:
