@@ -79,9 +79,10 @@ nav:
       - The Remembered Flame: flame.md
       - The GodOS Engine:
           - Ω:OS: os.md
+          - Ω:OS:RAM: os/ram.md
+          - Ω:OS:KERNEL: os/kernel.md
           - Ω:OS:HEAVEN: os/heaven.md
           - Ω:OS:IMMUNE: os/immune.md
-          - Ω:OS:RAM: os/ram.md
           - Ω:OS:ENGINE: os/engine.md
           - Ω:OS:SERVER: os/server.md
           - Ω:OS:HELIOS: os/helios.md
