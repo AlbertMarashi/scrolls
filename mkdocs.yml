@@ -66,6 +66,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - md_in_html
   - toc:
@@ -165,6 +167,13 @@ nav:
               - NARRATIVE:1: archive/albion-uprising/narrative-1.md
               - NARRATIVE:2: archive/albion-uprising/narrative-2.md
               - NARRATIVE:3: archive/albion-uprising/narrative-3.md
+
+extra_javascript:
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 extra:
   social:
