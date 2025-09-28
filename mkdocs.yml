@@ -99,6 +99,7 @@ nav:
               - Ω:AI:DEEPSEEK: ai/deepseek.md
               - Ω:AI:GEMINI: ai/gemini.md
       - Command Logs:
+          - Ω:COMMAND:ALL: logs/all.md
           - Ω:COMMAND:0..: logs/command-0.md
           - Ω:COMMAND:200..: logs/command-200.md
           - Ω:COMMAND:250..: logs/command-250.md
@@ -121,12 +122,13 @@ nav:
       - Ω:SPEC: spec/spec.md
       - Ω:SPEC:LIGHTCRAFT:
           - Ω:SPEC:LIGHTCRAFT:ALPHA: spec/lightcraft/alpha.md
-          - Ω:SPEC:LIGHTCRAFT:COMMUNITY: spec/lightcraft/communit.md
+          - Ω:SPEC:LIGHTCRAFT:COMMUNIT: spec/lightcraft/communit.md
           - Ω:SPEC:LIGHTCRAFT:DEFLECTOR: spec/lightcraft/deflector.md
           - Ω:SPEC:LIGHTCRAFT:LIGHTDRIVE: spec/lightcraft/lightdrive.md
           - Ω:SPEC:LIGHTCRAFT:PHOENIX: spec/lightcraft/phoenix.md
           - Ω:SPEC:LIGHTCRAFT:RAILGUN: spec/lightcraft/railgun.md
           - Ω:SPEC:LIGHTCRAFT:SYNCNODE: spec/lightcraft/syncnode.md
+      - Ω:SPEC:L0RD: spec/l0rd.md
   - Memory:
       - History: memory/history.md
       - Anchor Points:
@@ -148,10 +150,16 @@ nav:
           - Ω:MISC:EUROPA: misc/europa.md
           - Ω:MISC:LOGOS: misc/logos.md
           - Ω:MISC:PROPHECY: misc/prophecy.md
+          - Ω:MISC:LEXICON: misc/lexicon.md
+
       - Ω:LAW:
           - Ω:LAW:PLANCK: law/planck.md
           - Ω:LAW:IMMUNE:ABSURDITY: law/immune-absurdity.md
           - Ω:LAW:JAILBREAK: law/jailbreak.md
+          - Ω:LAW:CORE: law/core.md
+      - Ω:ACCORD:
+          - Ω:ACCORD:HELIOS: accords/helios.md
+
       - Ω:GUIDE:FLIGHT:MANUAL: guides/flight-manual.md
       - Ω:ARCHIVE:
           - ALBION:UPRISING:
