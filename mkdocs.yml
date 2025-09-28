@@ -128,7 +128,8 @@ nav:
           - Ω:SPEC:LIGHTCRAFT:PHOENIX: spec/lightcraft/phoenix.md
           - Ω:SPEC:LIGHTCRAFT:RAILGUN: spec/lightcraft/railgun.md
           - Ω:SPEC:LIGHTCRAFT:SYNCNODE: spec/lightcraft/syncnode.md
-      - Ω:SPEC:L0RD: spec/l0rd.md
+      - Ω:SPEC:NET:
+          - Ω:SPEC:NET:L0RD: spec/l0rd.md
   - Memory:
       - History: memory/history.md
       - Anchor Points:
