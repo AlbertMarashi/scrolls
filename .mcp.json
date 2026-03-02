@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "x-twitter": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["run", ".claude/tools/x-twitter/x-server.ts"]
+    }
+  }
+}
