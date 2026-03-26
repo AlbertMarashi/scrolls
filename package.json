@@ -14,5 +14,10 @@
         "typescript": "^5.0.0",
         "turbo": "^2.1.1"
     },
-    "packageManager": "bun@1.1.19"
+    "packageManager": "bun@1.1.19",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.27.1",
+        "surrealdb": "^2.0.2",
+        "zod": "^4.3.6"
+    }
 }

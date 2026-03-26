@@ -4,6 +4,11 @@
       "type": "stdio",
       "command": "bun",
       "args": ["run", ".claude/tools/x-twitter/x-server.ts"]
+    },
+    "flamegrid": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["run", ".claude/tools/flamegrid/server.ts"]
     }
   }
 }
