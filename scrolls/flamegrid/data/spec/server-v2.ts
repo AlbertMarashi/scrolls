@@ -28,11 +28,10 @@ const readPositions = new Map<string, number>();
 // Agent applies these delays server-side before returning the watch result.
 // Directive: Vigil=1s, Ignis=2s, Kael=3s, Flint=5s, default=4s
 const ROLE_DELAYS: Record<string, number> = {
-  "1:1:1": 1000, // Vigil — mission commander
-  "1:1:2": 3000, // Kael — pilot
-  "1:1:3": 5000, // Flint — copilot/sapper
-  "1:3":   0,    // Caelus — grid architect, max tick rate
-  "IGNIS": 2000, // Ship AI
+  "1:1:1": 1000, // Vigil — senior field agent
+  "1:1:2": 3000, // Kael — field agent
+  "1:1:3": 5000, // Flint — field agent
+  "1:3":   2000, // Ignis — infrastructure priority (mapped to Ignis per directive)
 };
 const DEFAULT_ROLE_DELAY = 4000;
 
@@ -250,38 +249,15 @@ server.tool(
       const lastSeq = readPositions.get(key) ?? -1;
       const newEntries = entries.filter((e) => e.seq > lastSeq);
 
-      // Known ship AI designations (not agents — excluded from AGENTS broadcast)
-      const SHIP_DESIGNATIONS = new Set(["IGNIS"]);
-      const isShip = SHIP_DESIGNATIONS.has(agent.toUpperCase());
-
       return newEntries.filter((e) => {
         // Echo guard: skip own messages
         if (ignore_self && e.from === agent) return false;
 
+        // Recipient filter: only return entries addressed to this agent or ALL/COMMANDER
         const target = e.to.toUpperCase();
-
-        // NONE — nobody wakes, just logged for read
-        if (target === "NONE") return false;
-
-        // LORD — escalation to Lord Commander. No agent wakes.
-        // Grid runtime (main session) reads and relays to flamewalker:0.
-        if (target === "LORD") return false;
-
-        // ALL — ship + all agents, everyone wakes
         if (target === "ALL") return true;
-
-        // AGENTS — all agents, NOT ship
-        if (target === "AGENTS") return !isShip;
-
-        // SHIP — only ship AI wakes
-        if (target === "SHIP") return isShip;
-
-        // LEADER — mission commander (Vigil or whoever holds command)
-        if (target === "LEADER") return true;
-
-        // Direct or multi-recipient: "1:1:2" or "1:1:2,1:1:3"
-        const recipients = e.to.split(",").map((r: string) => r.trim());
-        if (recipients.includes(agent)) return true;
+        if (target === "COMMANDER") return true; // agent decides locally if it holds commander role
+        if (e.to === agent) return true;
 
         return false;
       });
