@@ -147,7 +147,7 @@ server.tool(
       .enum(["THOUGHT", "SPEAK", "ACTION", "OBSERVE", "SYSTEM", "COMMAND"])
       .describe("Entry type"),
     to: z.string().describe(
-      "Recipient designation or keyword. Use a specific designation (e.g. 1:1:1), ALL for broadcast, COMMANDER for role-based routing, or NONE for informational entries (THOUGHT, SYSTEM)."
+      "Recipient designation or keyword. Use a specific designation (e.g. 1:1:1), ALL for broadcast, AGENTS for crew-only, SHIP for ship AI, LEADER for mission commander, LORD for escalation to Lord Commander, NONE for log-only entries. Comma-separated for multi-recipient (e.g. 1:1:2,1:1:3)."
     ),
     content: z.string().describe("The message content"),
     max_length: z
@@ -257,6 +257,9 @@ server.tool(
       return newEntries.filter((e) => {
         // Echo guard: skip own messages
         if (ignore_self && e.from === agent) return false;
+
+        // SYSTEM sees everything — grid daemon, no filtering
+        if (agent.toUpperCase() === "SYSTEM") return true;
 
         const target = e.to.toUpperCase();
 
