@@ -150,14 +150,9 @@ server.tool(
       "Recipient designation or keyword. Use a specific designation (e.g. 1:1:1), ALL for broadcast, AGENTS for crew-only, SHIP for ship AI, LEADER for mission commander, LORD for escalation to Lord Commander, NONE for log-only entries. Comma-separated for multi-recipient (e.g. 1:1:2,1:1:3)."
     ),
     content: z.string().describe("The message content"),
-    max_length: z
-      .number()
-      .default(500)
-      .describe("Maximum character length of content. Content beyond this limit is silently truncated. Default: 500."),
   },
-  async ({ file, agent, type, to, content, max_length }) => {
-    const trimmed = content.slice(0, max_length);
-    const entry = await appendEntry(file, agent, type, to, trimmed);
+  async ({ file, agent, type, to, content }) => {
+    const entry = await appendEntry(file, agent, type, to, content);
 
     return {
       content: [
